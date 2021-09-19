@@ -148,7 +148,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/19/%E9%80%9A%E8%BF%87Hexo%E5%92%8CGithub%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoxian.jpg">
@@ -162,7 +162,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/09/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">我的第一篇博客文章</a>
+            <a href="/2021/09/19/%E9%80%9A%E8%BF%87Hexo%E5%92%8CGithub%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">通过Hexo和github_Page来搭建一个免费的个人博客</a>
         </h2>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-09-19 10:53:06 / 修改时间：10:57:14" itemprop="dateCreated datePublished" datetime="2021-09-19T10:53:06+08:00">2021-09-19</time>
+              <time title="创建时间：2021-09-19 10:53:06 / 修改时间：17:32:55" itemprop="dateCreated datePublished" datetime="2021-09-19T10:53:06+08:00">2021-09-19</time>
             </span>
 
           
@@ -187,8 +187,47 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h1><p>说说这些东西吧，第一次搭博客很激动啊</p>
-<h1 id="第二篇"><a href="#第二篇" class="headerlink" title="第二篇"></a>第二篇</h1>
+          <h1 id="首先准备"><a href="#首先准备" class="headerlink" title="首先准备"></a>首先准备</h1><ul>
+<li><p>Node_JS</p>
+</li>
+<li><p>Git</p>
+</li>
+<li><p>安装Hexo</p>
+</li>
+<li><p>安装npm和cnpm</p>
+</li>
+</ul>
+<h1 id="检查是否装好"><a href="#检查是否装好" class="headerlink" title="检查是否装好"></a>检查是否装好</h1><ul>
+<li>git ：git –version</li>
+<li>node_js : node -v</li>
+<li>其他 ：名字 -v   如：hexo -v</li>
+</ul>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li><p>git的SSH-key问题（非常重要，否则上传不了，第一次使用要配置）</p>
+</li>
+<li><p>目录问题，如是在blog文件下进行操作还是在themes文件下操作</p>
+</li>
+<li><p>在预览后记得<strong>CTRL + C</strong>退出，否则会出错</p>
+</li>
+<li><p>Node_JS 的环境变量配置</p>
+</li>
+<li><p>Hexo的版本注意（不同的版本的设置略微不同，如要求ssh还是http）</p>
+</li>
+<li><p>同上，我的Hexo是4.3.0 在最后的设置就要是 <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a>……..而不是<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a>……..</p>
+</li>
+</ul>
+<h1 id="一些需要记得的常用Hexo命令"><a href="#一些需要记得的常用Hexo命令" class="headerlink" title="一些需要记得的常用Hexo命令"></a>一些需要记得的常用Hexo命令</h1><ul>
+<li><strong>hexo d</strong> : 上传博客（deploy）</li>
+<li><strong>hexo s</strong> :  预览（记得<strong>CTRL + C</strong>）</li>
+<li><strong>hexo clean</strong> : 清除缓存</li>
+<li><strong>hexo new “….”</strong> : 新建一个博文</li>
+</ul>
+<h1 id="自己遇到的一些”坑”"><a href="#自己遇到的一些”坑”" class="headerlink" title="自己遇到的一些”坑”"></a>自己遇到的一些”坑”</h1><ul>
+<li><p>换了个next theme后，执行任何hexo命令后都会得到一个Error提示：</p>
+<p>Cannot find module ‘hexo-util’  ： 运行一个命令安装下就可以：npm install hexo-util –save</p>
+</li>
+</ul>
+
       
     </div>
 
@@ -233,6 +272,13 @@
 
               <time title="创建时间：2021-09-18 20:53:14" itemprop="dateCreated datePublished" datetime="2021-09-18T20:53:14+08:00">2021-09-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-19 16:46:21" itemprop="dateModified" datetime="2021-09-19T16:46:21+08:00">2021-09-19</time>
+              </span>
 
           
 
@@ -245,19 +291,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <p>Welcome to <a target="_blank" rel="noopener" href="http://ssss1001.github.io/">my blog</a>! This is my very first post.I will show my good ideas in this.Welcom to favorite this pages. If you get any problems  or find something wrong when read my post, you can find me by E-mail or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/ssss1001/">GitHub</a>.</p>
+<p>Enjoy!</p>
 
       
     </div>
@@ -355,9 +390,6 @@
         <a href="mailto:yszm007@gmail.com" title="E-Mail → mailto:yszm007@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
-  <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
-  </div>
 
 
 
@@ -430,6 +462,26 @@
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
