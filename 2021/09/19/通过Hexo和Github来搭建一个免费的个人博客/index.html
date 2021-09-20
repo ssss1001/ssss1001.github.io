@@ -20,7 +20,7 @@
   <meta name="author" content="XiaoXian">
   <meta name="keywords" content="">
   
-  <title>通过Hexo和github_Page来搭建一个免费的个人博客 - XiaoXian</title>
+  <title>这篇blog是怎么来的 - XiaoXian</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -167,7 +167,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="通过Hexo和github_Page来搭建一个免费的个人博客">
+            <span class="h2" id="subtitle" title="这篇blog是怎么来的">
               
             </span>
 
@@ -189,7 +189,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      289 字
+      456 字
     </span>
   
 
@@ -199,7 +199,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      4
        分钟
     </span>
   
@@ -237,11 +237,11 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">通过Hexo和github_Page来搭建一个免费的个人博客</h1>
+            <h1 style="display: none">这篇blog是怎么来的</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年9月19日 下午
+                  本文最后更新于：2021年9月20日 下午
                 
               </p>
             
@@ -272,7 +272,7 @@
 </li>
 <li><p>Hexo的版本注意（不同的版本的设置略微不同，如要求ssh还是http）</p>
 </li>
-<li><p>同上，我的Hexo是4.3.0 在最后的设置就要是 <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>……..而不是<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a>……..</p>
+<li><p>同上，我的Hexo是4.3.0 在最后的设置就要是 <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>……..而不是<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a>……..</p>
 </li>
 </ul>
 <h1 id="一些需要记得的常用Hexo命令"><a href="#一些需要记得的常用Hexo命令" class="headerlink" title="一些需要记得的常用Hexo命令"></a>一些需要记得的常用Hexo命令</h1><ul>
@@ -281,6 +281,17 @@
 <li><strong>hexo clean</strong> : 清除缓存</li>
 <li><strong>hexo new “….”</strong> : 新建一个博文</li>
 <li><strong>hexo init</strong> : 初始化博客</li>
+</ul>
+<h1 id="指向自定义网站"><a href="#指向自定义网站" class="headerlink" title="指向自定义网站"></a>指向自定义网站</h1><p>GitHub_Page的**.github.io**有时让人感觉不够私人与geek</p>
+<p>这里先购买自己的域名，然后在GitHub自己的blog仓库里setting中的page里设置</p>
+<ul>
+<li>注意这样是不够的，因为每次deploy都要重新设置，很烦，但好在hexo是可以设置的</li>
+<li><ol>
+<li>在博客的**_config.yml**中设置url为自己的域名</li>
+<li>在博客文件夹中的根目录（sourse)文件夹中添加<strong>CNAME</strong>不要加后缀，(用记事本就好)在里面写上自己的域名</li>
+<li>要在域名的<strong>DNS解析器</strong>中设置好。一个A，是IP4地址，一个CNAME，是原先****.github.io的的全名</li>
+</ol>
+</li>
 </ul>
 <h1 id="自己遇到的一些”坑”"><a href="#自己遇到的一些”坑”" class="headerlink" title="自己遇到的一些”坑”"></a>自己遇到的一些”坑”</h1><ul>
 <li><p>换了个next theme后，执行任何hexo命令后都会得到一个Error提示：</p>
