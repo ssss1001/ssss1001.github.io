@@ -177,7 +177,7 @@ Xian</strong>&nbsp;</a>
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      881 字
+      914 字
     </span>
   
 
@@ -254,7 +254,8 @@ Xian</strong>&nbsp;</a>
 <li><p>在其他地方使用</p>
 <figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">LN</span> <span class="hljs-title">np</span> =</span> &#123;...&#125;;      <span class="hljs-comment">//道理一样</span><br></code></pre></div></td></tr></table></figure></li>
 </ul>
-<h2 id="指针与结构体指针"><a href="#指针与结构体指针" class="headerlink" title="指针与结构体指针"></a>指针与结构体指针</h2><ul>
+<h2 id="指针与结构体指针"><a href="#指针与结构体指针" class="headerlink" title="指针与结构体指针"></a>指针与结构体指针</h2><p>先贴个阮一峰大神的详细讲解：<a target="_blank" rel="noopener" href="https://wangdoc.com/clang/pointer.html">指针 - C 语言教程 - 网道 (wangdoc.com)</a>，底下说说自己的理解</p>
+<ul>
 <li><p>指针变量指向的是一个地址，如：</p>
 <figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-keyword">int</span> * p = &amp;q; <span class="hljs-comment">// 这里的p(注意不是*p)存储的就是q的地址，而*p就会代表q,*p的改动也会改动q</span><br></code></pre></div></td></tr></table></figure></li>
 <li><p>结构体指针同理，结构体指针就是指向一个结构体数据，如：</p>
