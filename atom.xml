@@ -6,7 +6,7 @@
   <link href="https://codexiaoxian.com/atom.xml" rel="self"/>
   
   <link href="https://codexiaoxian.com/"/>
-  <updated>2021-09-19T09:52:48.494Z</updated>
+  <updated>2021-09-21T05:57:13.383Z</updated>
   <id>https://codexiaoxian.com/</id>
   
   <author>
@@ -17,15 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>链表笔记</title>
+    <link href="https://codexiaoxian.com/2021/09/21/%E9%93%BE%E8%A1%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>https://codexiaoxian.com/2021/09/21/%E9%93%BE%E8%A1%A8%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-09-21T05:56:23.000Z</published>
+    <updated>2021-09-21T05:57:13.383Z</updated>
+    
+    
+    
+    
+    
+    <category term="数据结构笔记" scheme="https://codexiaoxian.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub使用</title>
     <link href="https://codexiaoxian.com/2021/09/19/GitHub%E4%BD%BF%E7%94%A8/"/>
     <id>https://codexiaoxian.com/2021/09/19/GitHub%E4%BD%BF%E7%94%A8/</id>
     <published>2021-09-19T09:52:11.000Z</published>
-    <updated>2021-09-19T09:52:48.494Z</updated>
+    <updated>2021-09-21T06:23:49.875Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="初识Git和GitHub"><a href="#初识Git和GitHub" class="headerlink" title="初识Git和GitHub"></a>初识Git和GitHub</h1><p><strong>WIKI</strong>:<a href="https://zh.wikipedia.org/wiki/Git">git - 维基百科，自由的百科全书 (wikipedia.org)</a></p><p>​         <a href="https://zh.wikipedia.org/wiki/GitHub">GitHub - 维基百科，自由的百科全书 (wikipedia.org)</a></p><p><strong>百度</strong>：<a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin">GIT（分布式版本控制系统）_百度百科 (baidu.com)</a></p><div class="hljs code-wrapper"><pre><code>       [Github_百度百科 (baidu.com)](https://baike.baidu.com/item/Github)</code></pre></div><h1 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h1><h2 id="如何Clone一个仓库"><a href="#如何Clone一个仓库" class="headerlink" title="如何Clone一个仓库"></a>如何Clone一个仓库</h2><p>首先在要下载到的文件夹下右击选择<strong>Git Bash</strong>，输入：：</p><p><strong>git clone https://……..(你要clone的仓库复制的地址) (空格(你准备建立的文件夹名)</strong></p><p>“举个栗子”:</p><figure class="highlight plaintext"><figcaption><span>git clone</span><a href="https://github.com/xiaolei565/aimto408.git">kaoyan/408</a></figcaption><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs $">$ git clone https://github.com/xiaolei565/aimto408.git kaoyan/408<br></code></pre></div></td></tr></table></figure><ol><li>地址在那边找？怎么复制？在你打开的仓库的右上方有个绿色的<strong>CODE</strong>键，点击它，再点击一下地址旁边草稿本样的图标，你就可以复制下来仓科地址了</li><li>一定要在下载到的文件夹下操作？是的，建议这样做。即是你熟悉命令行也要在要下载到的文件夹中进行git操作</li><li>文件夹只能一个？不是的，你可以用**/**来建立“文件夹中的文件夹”</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;初识Git和GitHub&quot;&gt;&lt;a href=&quot;#初识Git和GitHub&quot; class=&quot;headerlink&quot; title=&quot;初识Git和GitHub&quot;&gt;&lt;/a&gt;初识Git和GitHub&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;WIKI&lt;/strong&gt;:&lt;a href=</summary>
+      
     
     
     
     
+    <category term="工具使用" scheme="https://codexiaoxian.com/tags/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
@@ -34,23 +58,20 @@
     <link href="https://codexiaoxian.com/2021/09/19/%E9%80%9A%E8%BF%87Hexo%E5%92%8CGithub%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://codexiaoxian.com/2021/09/19/%E9%80%9A%E8%BF%87Hexo%E5%92%8CGithub%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-09-19T02:53:06.000Z</published>
-    <updated>2021-09-20T07:22:53.951Z</updated>
+    <updated>2021-09-21T05:55:30.754Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="首先准备"><a href="#首先准备" class="headerlink" title="首先准备"></a>首先准备</h1><ul><li><p>Node_JS</p></li><li><p>Git</p></li><li><p>安装Hexo</p></li><li><p>安装npm和cnpm</p></li></ul><h1 id="检查是否装好"><a href="#检查是否装好" class="headerlink" title="检查是否装好"></a>检查是否装好</h1><ul><li>git ：git –version</li><li>node_js : node -v</li><li>其他 ：名字 -v   如：hexo -v</li></ul><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul><li><p>git的SSH-key问题（非常重要，否则上传不了，第一次使用要配置）</p></li><li><p>目录问题，如是在blog文件下进行操作还是在themes文件下操作</p></li><li><p>在预览后记得<strong>CTRL + C</strong>退出，否则会出错</p></li><li><p>Node_JS 的环境变量配置</p></li><li><p>Hexo的版本注意（不同的版本的设置略微不同，如要求ssh还是http）</p></li><li><p>同上，我的Hexo是4.3.0 在最后的设置就要是 <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#109;</a>……..而不是<a href="https://github.com/">https://github.com</a>……..</p></li></ul><h1 id="一些需要记得的常用Hexo命令"><a href="#一些需要记得的常用Hexo命令" class="headerlink" title="一些需要记得的常用Hexo命令"></a>一些需要记得的常用Hexo命令</h1><ul><li><strong>hexo d</strong> : 上传博客（deploy）</li><li><strong>hexo s</strong> :  预览（记得<strong>CTRL + C</strong>）</li><li><strong>hexo clean</strong> : 清除缓存</li><li><strong>hexo new “….”</strong> : 新建一个博文</li><li><strong>hexo init</strong> : 初始化博客</li></ul><h1 id="指向自定义网站"><a href="#指向自定义网站" class="headerlink" title="指向自定义网站"></a>指向自定义网站</h1><p>GitHub_Page的**.github.io**有时让人感觉不够私人与geek</p><p>这里先购买自己的域名，然后在GitHub自己的blog仓库里setting中的page里设置</p><ul><li>注意这样是不够的，因为每次deploy都要重新设置，很烦，但好在hexo是可以设置的</li><li><ol><li>在博客的**_config.yml**中设置url为自己的域名</li><li>在博客文件夹中的根目录（sourse)文件夹中添加<strong>CNAME</strong>不要加后缀，(用记事本就好)在里面写上自己的域名</li><li>要在域名的<strong>DNS解析器</strong>中设置好。一个A，是IP4地址，一个CNAME，是原先****.github.io的的全名</li></ol></li></ul><h1 id="自己遇到的一些”坑”"><a href="#自己遇到的一些”坑”" class="headerlink" title="自己遇到的一些”坑”"></a>自己遇到的一些”坑”</h1><ul><li><p>换了个next theme后，执行任何hexo命令后都会得到一个Error提示：</p><p>Cannot find module ‘hexo-util’  ： 运行一个命令安装下就可以：npm install hexo-util –save</p></li></ul><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><ul><li>查看他人博客网页主题 ： 右击查看源码，ctrl + f 查找</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>搭建博客推荐教程：<a href="https://www.cnblogs.com/zhcncn/p/4097881.html">Hexo搭建Github静态博客 - 金石开 - 博客园 (cnblogs.com)</a></p><h2 id="必要软件"><a href="#必要软件" class="headerlink" title="必要软件"></a>必要软件</h2><ul><li><a href="https://nodejs.org/zh-cn/">Node.js (nodejs.org)</a></li><li><a href="https://git-scm.com/">Git (git-scm.com)</a></li><li><a href="https://hexo.io/zh-cn/">Hexo</a></li><li>安装npm和cnpm</li></ul><h2 id="必要资料"><a href="#必要资料" class="headerlink" title="必要资料"></a>必要资料</h2><p>博客搭建：参考hexo官方中文网站：<a href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a></p><p>主题设置：主题的官方文档：如：<a href="https://hexo.fluid-dev.com/docs/start/">开始使用 | Hexo Fluid (fluid-dev.com)</a></p><p>主题寻找：<a href="https://github.com/search?q=hexo-theme">Search · hexo-theme (github.com)</a></p><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul><li><p>git的<strong>SSH-key</strong>问题（非常重要，否则上传不了，<strong>第一次使用要配置</strong>）</p></li><li><p>目录问题，如是在blog文件下进行操作还是在themes文件下操作</p></li><li><p>在预览后（<strong>hexo s</strong>)记得<strong>CTRL + C</strong>退出，否则会出错</p></li><li><p>Node_JS 的环境变量配置</p></li><li><p>Hexo的版本注意（不同的版本的设置略微不同，如要求ssh还是http）</p><ul><li>我的Hexo是4.3.0 在最后的设置就要是 <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#111;&#109;</a>……..而不是<a href="https://github.com/">https://github.com</a>……..</li></ul></li></ul><h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><p>建议自己看官方网站<a href="https://hexo.io/zh-cn/docs/commands">指令 | Hexo</a>,这边举几个常用例子</p><ul><li><strong>hexo d</strong> : 上传博客（deploy）</li><li><strong>hexo s</strong> :  预览（记得<strong>CTRL + C</strong>）</li><li><strong>hexo clean</strong> : 清除缓存</li><li><strong>hexo new “….”</strong> : 新建一个博文</li><li><strong>hexo init</strong> : 初始化博客</li></ul><h2 id="版本号查看命令"><a href="#版本号查看命令" class="headerlink" title="版本号查看命令"></a>版本号查看命令</h2><ul><li>git 版本：git –version</li><li>node_js版本 : node -v</li><li>其他 版本：名字 -v   如：hexo -v</li></ul><h1 id="自定义网站域名"><a href="#自定义网站域名" class="headerlink" title="自定义网站域名"></a>自定义网站域名</h1><p>GitHub_Page的**.github.io**有时让人感觉不够私人与geek</p><p>这里先购买自己的域名，然后在GitHub自己的blog仓库里setting中的page里设置</p><ul><li>注意这样是不够的，因为每次deploy都要重新设置，很烦，但好在hexo是可以设置的</li><li><ol><li>在博客的**_config.yml**中设置url为自己的域名</li><li>在博客文件夹中的根目录（sourse)文件夹中添加<strong>CNAME</strong>不要加后缀(用记事本就好)，在里面写上自己的域名</li><li>要在域名的<strong>DNS解析器</strong>中设置好。一个A，是IP4地址，一个CNAME，是原先****.github.io的的全名</li></ol></li></ul><h1 id="自己遇到其他的一些”坑”"><a href="#自己遇到其他的一些”坑”" class="headerlink" title="自己遇到其他的一些”坑”"></a>自己遇到其他的一些”坑”</h1><ul><li><p>换了个next theme后，执行任何hexo命令后都会得到一个Error提示：</p><p>Cannot find module ‘hexo-util’  ： 运行一个命令安装下就可以：npm install hexo-util –save</p></li></ul><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><ul><li>查看他人博客网页主题 ： 右击查看源码，ctrl + f 查找 搜索theme</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;首先准备&quot;&gt;&lt;a href=&quot;#首先准备&quot; class=&quot;headerlink&quot; title=&quot;首先准备&quot;&gt;&lt;/a&gt;首先准备&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Node_JS&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Git&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;安装Hexo&lt;</summary>
+    <summary type="html">&lt;h1 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h1&gt;&lt;p&gt;搭建博客推荐教程：&lt;a href=&quot;https://www.cnblogs.com/zhcncn/p/4097881.html&quot;&gt;Hexo搭</summary>
       
     
     
     
+    
+    <category term="blog那些事" scheme="https://codexiaoxian.com/tags/blog%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
     
   </entry>
   
