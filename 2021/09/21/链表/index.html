@@ -177,7 +177,7 @@ Xian</strong>&nbsp;</a>
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      332 字
+      453 字
     </span>
   
 
@@ -187,7 +187,7 @@ Xian</strong>&nbsp;</a>
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      4
        分钟
     </span>
   
@@ -228,40 +228,48 @@ Xian</strong>&nbsp;</a>
             <h1 style="display: none">链表</h1>
             
             <div class="markdown-body">
-              <p> 大体知识点：</p>
+              <p> 先附上维基和百度百科：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%93%BE%E8%A1%A8">链表 - 维基百科，自由的百科全书 (wikipedia.org)</a></p>
+<p>​                                        <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%93%BE%E8%A1%A8/9794473?fr=aladdin">链表_百度百科 (baidu.com)</a></p>
+<p> 大体知识点：</p>
 <ul>
 <li>链表简介</li>
 <li>链表结构的创建</li>
 <li>链表的”增删查改“</li>
 </ul>
-<h1 id="链表简介"><a href="#链表简介" class="headerlink" title="链表简介"></a>链表简介</h1><p>链表，顺序表的链式存储。在数据结构中有两种存储方式：顺序存储和链式存储。</p>
+<h1 id="链表简介"><a href="#链表简介" class="headerlink" title="链表简介"></a>链表简介</h1><p>链表，线性表的链式存储。在数据结构中有两种存储方式：顺序存储和链式存储。</p>
+<p>主要种类有：<strong>单链表，双链表（双向链表），循环链表</strong></p>
 <p>简单理解就是<strong>包含指针的数组</strong>，但是和数组不同，链表不是存储在一起的，而是存储在不同的地方，而将它们串联在一起的就是指针这个强大的工具。</p>
 <p>链表有以下几个特点：</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>增</th>
-<th>删</th>
-<th>查</th>
-<th>改</th>
+<th align="center"></th>
+<th align="center">增（插入）</th>
+<th align="center">删</th>
+<th align="center">查</th>
+<th align="center">改</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>链表</td>
-<td>快</td>
-<td>快</td>
-<td></td>
-<td>快</td>
+<td align="center">链表</td>
+<td align="center">快 O(1)</td>
+<td align="center">快 O(1)</td>
+<td align="center">O(n)</td>
+<td align="center">快 O(1)</td>
 </tr>
 <tr>
-<td>顺序表</td>
-<td></td>
-<td></td>
-<td>快</td>
-<td></td>
+<td align="center">顺序表</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">快 O(1)</td>
+<td align="center"></td>
 </tr>
 </tbody></table>
+<h3 id="链表术语介绍"><a href="#链表术语介绍" class="headerlink" title="链表术语介绍"></a>链表术语介绍</h3><p>单向链表（单链表)：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8D%95%E9%93%BE%E8%A1%A8/3228368?fr=aladdin">单链表_百度百科 (baidu.com)</a>         <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8">单向链表 - 维基百科，自由的百科全书 (wikipedia.org)</a></p>
+<p>结点：</p>
+<p>头指针：</p>
+<p>双向链表（双链表)：</p>
+<p>循环链表</p>
 <h1 id="链表结构的创建"><a href="#链表结构的创建" class="headerlink" title="链表结构的创建"></a>链表结构的创建</h1><p>​    分为以下几个部分：</p>
 <ul>
 <li><p>链表结构体的搭建</p>
