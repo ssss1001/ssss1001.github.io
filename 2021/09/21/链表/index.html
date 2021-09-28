@@ -177,7 +177,7 @@ Xian</strong>&nbsp;</a>
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      453 字
+      741 字
     </span>
   
 
@@ -187,7 +187,7 @@ Xian</strong>&nbsp;</a>
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      7
        分钟
     </span>
   
@@ -236,9 +236,10 @@ Xian</strong>&nbsp;</a>
 <li>链表结构的创建</li>
 <li>链表的”增删查改“</li>
 </ul>
+<p>运行环境：VS2019</p>
 <h1 id="链表简介"><a href="#链表简介" class="headerlink" title="链表简介"></a>链表简介</h1><p>链表，线性表的链式存储。在数据结构中有两种存储方式：顺序存储和链式存储。</p>
 <p>主要种类有：<strong>单链表，双链表（双向链表），循环链表</strong></p>
-<p>简单理解就是<strong>包含指针的数组</strong>，但是和数组不同，链表不是存储在一起的，而是存储在不同的地方，而将它们串联在一起的就是指针这个强大的工具。</p>
+<p>简单理解就是<strong>包含指针的数组</strong>，但是和数组不同，链表不是顺序存储在一起的，而是存储在不同的地方，而将它们串联在一起的就是指针这个强大的工具。</p>
 <p>链表有以下几个特点：</p>
 <table>
 <thead>
@@ -285,13 +286,29 @@ Xian</strong>&nbsp;</a>
 
 
 
-<h2 id="链表的初始建立"><a href="#链表的初始建立" class="headerlink" title="链表的初始建立"></a>链表的初始建立</h2><p>这里分为两个方法：<strong>头插法</strong> 和<strong>尾插法</strong></p>
+<h2 id="链表的初始建立"><a href="#链表的初始建立" class="headerlink" title="链表的初始建立"></a>链表的初始建立</h2><p>先来说说一个空结点的创建和初始化</p>
+<figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-function">Link <span class="hljs-title">cn</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>&#123;<br>    <span class="hljs-comment">//动态分配</span><br>	Link node = (Link)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(Node));<br>    <span class="hljs-comment">//判断是否分配成功</span><br>	<span class="hljs-keyword">if</span> (node == <span class="hljs-literal">NULL</span>) &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;分配失败&quot;</span>);<br>		<span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);<br>	&#125;<br>    <span class="hljs-comment">//初始化</span><br>	node-&gt;data = <span class="hljs-number">0</span>;<br>	node-&gt;next = <span class="hljs-literal">NULL</span>;<br>    <br>	<span class="hljs-keyword">return</span> node;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+
+
+<p>这里分为两个方法：<strong>头插法</strong> 和<strong>尾插法</strong></p>
 <p>先来说尾插法：</p>
-<figure class="highlight"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs"><br></code></pre></div></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-function">Link <span class="hljs-title">creat_node_1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> len)</span> </span>&#123;<br>	Link head = cn();<br>    <span class="hljs-comment">//传递结点</span><br>	Link rear = head;<br>    <span class="hljs-comment">//创建新结点进行赋值</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; len; i++) &#123;		<span class="hljs-comment">//len个结点</span><br>		Link p = cn();<br>		scanf_s(<span class="hljs-string">&quot;%d&quot;</span>, &amp;p-&gt;data);<br>		<span class="hljs-comment">//核心语句</span><br>		rear-&gt;next = p;<br>		rear = p;<br>	&#125;rear-&gt;next = <span class="hljs-literal">NULL</span>;<br>	<span class="hljs-keyword">return</span> head;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+<p>尾插法的优点：插入时的顺序是正常的；</p>
+<p>再来说说头插法：</p>
+<figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-comment">//头插法，创建链表</span><br><span class="hljs-function">Link <span class="hljs-title">creat_node_2</span><span class="hljs-params">(<span class="hljs-keyword">int</span> len)</span> </span>&#123;<br>	Link head = cn();<br>	<span class="hljs-comment">//</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; len; i++) &#123;<br>		Link p = cn();<br>		p-&gt;data = scanf_s(<span class="hljs-string">&quot;%d&quot;</span>, &amp;p-&gt;data);<br>		<span class="hljs-comment">//核心语句</span><br>		p-&gt;next = head-&gt;next;<br>		head-&gt;next = p;<br>	&#125;<br>	<span class="hljs-keyword">return</span> head;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+<p>头插法的缺点：插入的结点的顺序是反的（可以想想链表的逆置）</p>
+<h2 id="链表的打印"><a href="#链表的打印" class="headerlink" title="链表的打印"></a>链表的打印</h2><figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print_list</span><span class="hljs-params">(Link head)</span> </span>&#123;<br>    <br>	Link p = head-&gt;next;	<span class="hljs-comment">//从第一个结点开始</span><br>	<span class="hljs-keyword">while</span> (p) &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>, p-&gt;data);<br>		p = p-&gt;next;	<span class="hljs-comment">//下一个结点</span><br>	&#125;<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>);<br>&#125;<br></code></pre></div></td></tr></table></figure>
 
 
 
-<h2 id="链表的打印"><a href="#链表的打印" class="headerlink" title="链表的打印"></a>链表的打印</h2><h2 id="链表的元素个数的打印"><a href="#链表的元素个数的打印" class="headerlink" title="链表的元素个数的打印"></a>链表的元素个数的打印</h2><h1 id="链表的”增删查改“"><a href="#链表的”增删查改“" class="headerlink" title="链表的”增删查改“"></a>链表的”增删查改“</h1><p>分为以下几个：</p>
+<h2 id="链表的元素个数的打印"><a href="#链表的元素个数的打印" class="headerlink" title="链表的元素个数的打印"></a>链表的元素个数的打印</h2><figure class="highlight"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs"><br></code></pre></div></td></tr></table></figure>
+
+
+
+<h1 id="链表的”增删查改“"><a href="#链表的”增删查改“" class="headerlink" title="链表的”增删查改“"></a>链表的”增删查改“</h1><p>分为以下几个：</p>
 <ul>
 <li>链表结点的查找</li>
 <li>链表结点的删除</li>
